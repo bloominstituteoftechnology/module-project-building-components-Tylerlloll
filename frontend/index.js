@@ -37,11 +37,11 @@ function moduleProject3() {
     idElement.textContent = `Learner ID: ${learner.id}`
 
     const dobP = document.createElement('p');
-    dobP.textContent = `Date of Birth ${learner.dateOfBirth}`
+    dobP.textContent = `Date of Birth: ${learner.dateOfBirth}`
 
     const favLangP = document.createElement('p');
     const favLanguage = languages.find(lang => lang.id === learner.favLanguage)
-    favLangP.textContent = `Favorite Languate: ${favLanguage.name}`;
+    favLangP.textContent = `Favorite Language: ${favLanguage.name}`;
 
     [nameP, idElement, dobP, favLangP].forEach(p => {
       card.appendChild(p);
